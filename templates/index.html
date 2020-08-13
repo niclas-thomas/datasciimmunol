@@ -15,12 +15,14 @@
 
 		<!-- Header -->
 			<header id="header" class="alt">
-				<h1><strong><a href="index.html">Data Science</a></strong> Immunologists</h1>
+				<h1><strong><a href="{{ url_for('index')}}">Data Science</a></strong> Immunologists</h1>
 				<nav id="nav">
 					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="generic.html">About Us</a></li>
-						<li><a href="elements.html">Book</a></li>
+						<li><a href="{{ url_for('index')}}">Home</a></li>
+						<li><a href="#one">Book</a></li>
+						<li><a href="#three">About Us</a></li>
+						<li><a href="{{ url_for('whatisdatascience')}}">What is data science?</a></li>
+						<li><a href="{{ url_for('downloads')}}">Downloads</a></li>
 					</ul>
 				</nav>
 			</header>
@@ -31,11 +33,10 @@
 			<section id="banner">
 				<h2>Data Science for Immunologists</h2>
 				<p>
-					An Introduction to Machine Learning, Statistics & Programming for Immunologists<br><br>
-					Our book "Data Science for Immunologists" is now available to purchase through Kindle and the Kindle app for Android, iPhone, Mac and Windows.
+					An Introductory Book to Machine Learning, Statistics & Programming for Immunologists<br><br>
 				</p>
 				<ul class="actions">
-					<li><a href="#" class="button special big">Buy Now</a></li>
+					<li><a href="https://www.amazon.co.uk/Data-Science-Immunologists-Niclas-Thomas-ebook/dp/B079W4HXWV" class="button special big">Buy Now</a></li>
 				</ul>
 			</section>
 
@@ -45,9 +46,8 @@
 						<div class="row 200%">
 							<div class="6u 12u$(medium)">
 								<header class="major">
-									<h2>BOOK:
-										DATA SCIENCE FOR IMMUNOLOGISTS</h2>
-									<!-- <p></p> -->
+									<h2>What is our book about?</h2>
+									<p><img src="/static/frontcover.png" width="50%" alt="" /></p>
 								</header>
 							</div>
 							<div class="6u$ 12u$(medium)">
@@ -67,7 +67,7 @@
 									own bespoke analyses when coupled with a sound mathematical and statistical understanding.
 								</p>
 								<p>
-									​Our new book focusses on the practical aspects of data science, providing sufficient theoretical background without delving into
+									​Our book focusses on the practical aspects of data science, providing sufficient theoretical background without delving into
 									all of the details of each of the methods presented. Introductory chapters are presented alongside the analysis of a publicly
 									available data set, allowing the reader to have practical hands-on experience when learning about important concepts in statistics,
 									machine learning and programming. Topics include: -
@@ -91,63 +91,78 @@
 					</div>
 				</section>
 
-			<!-- Two -->
-				<section id="two" class="wrapper style2 special">
-					<div class="container">
-						<header class="major">
-							<h2>Fusce ultrices fringilla</h2>
-							<p>Maecenas vitae tellus feugiat eleifend</p>
-						</header>
-						<div class="row 150%">
-							<div class="6u 12u$(xsmall)">
-								<div class="image fit captioned">
-									<img src="/static/pic02.jpg" alt="" />
-									<h3>Lorem ipsum dolor sit amet.</h3>
-								</div>
-							</div>
-							<div class="6u$ 12u$(xsmall)">
-								<div class="image fit captioned">
-									<img src="/static/pic03.jpg" alt="" />
-									<h3>Illum, maiores tempora cupid?</h3>
-								</div>
-							</div>
-						</div>
-						<ul class="actions">
-							<li><a href="#" class="button special big">Nulla luctus</a></li>
-							<li><a href="#" class="button big">Sed vulputate</a></li>
-						</ul>
-					</div>
-				</section>
 
 			<!-- Three -->
-				<section id="three" class="wrapper style1">
+				<section id="three" class="wrapper style2">
 					<div class="container">
 						<header class="major special">
-							<h2>Mauris vulputate dolor</h2>
-							<p>Feugiat sed lorem ipsum magna</p>
+							<h2 id="aboutus">About Us</h2>
 						</header>
 						<div class="feature-grid">
 							<div class="feature">
-								<div class="image rounded"><img src="/static/pic04.jpg" alt="" /></div>
+								<div class="image rounded"><img src="/static/niclas.jpg" alt="" /></div>
 								<div class="content">
 									<header>
-										<h4>Lorem ipsum</h4>
-										<p>Lorem ipsum dolor sit</p>
+										<h4>Niclas Thomas</h4>
+										<p>MMath MRes PhD</p>
 									</header>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore esse tenetur accusantium porro omnis, unde mollitia totam sit nesciunt consectetur.</p>
+									<p>
+										Niclas is a professional data scientist with experience at several large retailers,
+										tackling a wide range of business problems using advanced mathematical and statistical techniques.
+									</p>
+									<p>
+										He gained a PhD at UCL using machine learning to build predictive models of the immune system,
+										combining standard experimental techniques with advanced analytical methods. These methods were
+										applied to a variety of data types, from high throughput sequencing data to lower dimensional cell
+										frequency data. Following completion of his PhD, he worked as a post-doctoral research associate,
+										using machine learning to predict renal transplant failure from flow cytometry data.
+									</p>
+									<p>
+										Whilst academic data science differs to corporate data science on a couple of points, such as scope
+										for innovation and pace of delivery, there are far more similarities than differences. Both require
+										sound theoretical knowledge, the ability to programmatically implement mathematical ideas, a collaborative
+										mindset and the ability to communicate complex approaches and results to non-technical colleagues.
+										The last of these points is a real passion of his.
+									</p>
+									<p>
+										He consults on several immunological projects, advising on statistical analysis, experimental design
+										and visualisation techniques amongst other things. As well as improving the quality of data analysis,
+										he enjoys bringing data science to new audiences, and this website and associated book is written with
+										this in mind.
+									</p>
 								</div>
 							</div>
 							<div class="feature">
-								<div class="image rounded"><img src="/static/pic05.jpg" alt="" /></div>
+								<div class="image rounded"><img src="/static/laura.jpg" alt="" /></div>
 								<div class="content">
 									<header>
-										<h4>Recusandae nemo</h4>
-										<p>Ratione maiores a, commodi</p>
+										<h4>Laura Pallett</h4>
+										<p>BSc PhD</p>
 									</header>
-									<p>Animi mollitia optio culpa expedita. Dolorem alias minima culpa repellat. Dolores, fuga maiores ut obcaecati blanditiis, at aperiam doloremque.</p>
+									<p>
+										Laura is a postdoctoral research scientist at UCL, focussing on understanding the mechanisms of immune
+										dysfunction in chronic hepatitis B infection. Having gained a PhD in viral immunology with first-author
+										publications in Nature Medicine and Journal of Experimental Medicine, she is now investigating immunological
+										mechanisms at play in the human liver, with specific interests in immunometabolism and tissue-residency.
+									</p>
+									<p>
+										Whilst having trained as a laboratory scientist, she has recently taken a keen interest in advanced in silico
+										techniques for the analysis of immunological data. In particular, she believes that strong fundamentals in
+										statistics coupled with practical knowledge of visualisation techniques is a must for the modern immunologist.
+									</p>
+									<p>
+
+										In addition to her academic experience, she has worked at GlaxoSmithKline and acts on immunology advisory
+										boards for Gilead.
+									</p>
+									<p>
+										She is passionate about science communication, and is the co-founder and co-author of her lab's twitter feed,
+										with the aim of bringing their work to a broader audience. She is also an early careers representative on the
+										British Society of Immunology Forum.
+									</p>
 								</div>
 							</div>
-							<div class="feature">
+							<!-- <div class="feature">
 								<div class="image rounded"><img src="/static/pic06.jpg" alt="" /></div>
 								<div class="content">
 									<header>
@@ -166,13 +181,13 @@
 									</header>
 									<p>Vitae earum unde, autem labore voluptas ex, iste dolorum inventore natus consequatur iure similique obcaecati aut corporis hic in! Porro sed.</p>
 								</div>
-							</div>
+							</div> -->
 						</div>
 					</div>
 				</section>
 
 			<!-- Four -->
-				<section id="four" class="wrapper style3 special">
+				<!-- <section id="four" class="wrapper style3 special">
 					<div class="container">
 						<header class="major">
 							<h2>Downloads</h2>
@@ -192,20 +207,18 @@
 							<li><a href="#" class="button special big">Get in touch</a></li>
 						</ul>
 					</div>
-				</section>
+				</section> -->
 
 		<!-- Footer -->
 			<footer id="footer">
 				<div class="container">
 					<ul class="icons">
-						<li><a href="#" class="icon fa-facebook"></a></li>
-						<li><a href="#" class="icon fa-twitter"></a></li>
-						<li><a href="#" class="icon fa-instagram"></a></li>
+						<li><a href="https://twitter.com/datasciimmunol?lang=en" class="icon fa-twitter"></a></li>
+						<li><a href="https://linkedin.com/in/niclas-thomas-1159bb29" class="icon fa-linkedin"></a></li>
 					</ul>
 					<ul class="copyright">
-						<li>&copy; Untitled</li>
+						<li>&copy; Data Science for Immunologists</li>
 						<li>Design: <a href="http://templated.co">TEMPLATED</a></li>
-						<li>Images: <a href="http://unsplash.com">Unsplash</a></li>
 					</ul>
 				</div>
 			</footer>

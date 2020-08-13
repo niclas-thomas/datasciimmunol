@@ -2730,12 +2730,13 @@
 		}
 
 		.wrapper.style2 {
-			background-color: #f6f6f6;
+			background-color: white;
 		}
 
 		.wrapper.style3 {
 			background-attachment: fixed;
-			background-image: url("images/overlay.png"), url("../../images/banner.jpg");
+			/* background-image: url("/static/css/images/overlay.png"), url("../../static/banner.jpg"); */
+			/* background-color: yellow; */
 			background-position: center center;
 			background-size: cover;
 		}
@@ -3025,7 +3026,7 @@
 			transition: color 0.2s ease-in-out;
 			-webkit-tap-highlight-color: transparent;
 			border: 0;
-			color: #484848;
+			color: #c02626;
 			cursor: pointer;
 			display: block;
 			height: 4em;
@@ -3090,7 +3091,7 @@
 	#banner {
 		padding: 16em 0 13em 0;
 		background-attachment: fixed;
-		background-image: url("images/overlay.png"), url("../../images/banner.jpg");
+		background-image: url("/static/css/images/overlay.png"), url("../../static/banner.jpg");
 		background-position: center top;
 		background-size: cover;
 		line-height: 1.75;

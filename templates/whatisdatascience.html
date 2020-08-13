@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<!--
+	Spatial by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Data Science for Immunologists</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="/static/css/main.css" />
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<h1><strong><a href="{{ url_for('index')}}">Data Science</a></strong> Immunologists</h1>
+				<nav id="nav">
+					<ul>
+						<li><a href="{{ url_for('index')}}">Home</a></li>
+						<li><a href="{{ url_for('index')}}#one">Book</a></li>
+						<li><a href="{{ url_for('index')}}#three">About Us</a></li>
+						<li><a href="{{ url_for('whatisdatascience')}}">What is data science?</a></li>
+						<li><a href="{{ url_for('downloads')}}">Downloads</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<a href="#menu" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+
+		<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="container">
+					<header class="major special">
+						<h2>What is data science?</h2>
+						<!-- <p></p> -->
+					</header>
+
+
+					<!-- Image -->
+						<section>
+							<p><span class="image right"><img src="/static/ellipsoids.png" alt="Learn how to produce beautiful visualisations with our book" /></span>
+								Whilst no single definition of data science exists, it broadly concerns the application of the
+								scientific method to data. Data science is used to obtain insights from data through a combination
+								of advanced analytic techniques. Typically, data science brings together techniques from several fields, acting at the intersection
+								of statistics, mathematics, machine learning and programming. Machine learning in particular has seen
+								a huge growth in interest recently, and whilst the hype may not always live up to reality, recent
+								advances in this field allow novel insights to be drawn from data like never before. Knowledge of these techniques means little without the power to implement them. Fortunately, many of
+								these techniques can be easily implemented in Python and R, open source programming languages that
+								benefit from a wide community of experts who contribute code to these projects and make it publicly
+								available. A little bit of knowledge is a dangerous thing, however, and it would be unwise to implement
+								these techniques without knowing how they work, and when and when not to use them.
+							</p>
+							<p>
+								The best data scientists have a sound knowledge of machine learning and statistical techniques, combined
+								with strong programming capability. The demands of data science in a corporate setting are very different to
+								those in an immunological research setting. For example, the practice of web scraping (automating the retrieval
+								of information from web pages) is commonly required in a business setting, but in the context of immunology,
+								this would be an irrelevant skill.
+								
+								Courses and textbooks that focus on data science as a general skill set are not particularly relevant for the
+								researcher in immunology. For this area of research, data science requires a heavy focus on frequentist statistics
+								(i.e. statistical significance testing) and visualisation techniques (i.e. dimension reduction, clustering and
+								alternative methods to display information).
+
+								Rather than learning about clustering as a general method for grouping similar objects together, it's far more useful
+								to learn about and apply clustering techniques in a more relevant context such as flow cyotmetry. Likewise, machine
+								learning concepts such as classification models are easier to understand when introduced in the context of developing
+								a clinical patient model.
+								
+								Data science for immunologists places more emphasis on relevant techniques, ignoring methods that will likely never be
+								needed and instead focussing on those that must form the backbone of an immunologists analytical toolkit.
+							</p>
+						</section>
+				</div>
+			</section>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="container">
+				<ul class="icons">
+					<li><a href="https://twitter.com/datasciimmunol?lang=en" class="icon fa-twitter"></a></li>
+					<li><a href="https://linkedin.com/in/niclas-thomas-1159bb29" class="icon fa-linkedin"></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; Data Science for Immunologists</li>
+					<li>Design: <a href="http://templated.co">TEMPLATED</a></li>
+				</ul>
+			</div>
+		</footer>
+
+		<!-- Scripts -->
+			<script src="/static/js/jquery.min.js"></script>
+			<script src="/static/js/skel.min.js"></script>
+			<script src="/static/js/util.js"></script>
+			<script src="/static/js/main.js"></script>
+
+	</body>
+</html>
