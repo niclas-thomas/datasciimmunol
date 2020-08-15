@@ -677,6 +677,7 @@ features
 .feature-item .left-icon img {
   float: left;
   margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .feature-item .right-content {
@@ -685,7 +686,7 @@ features
 
 .feature-item .right-content h4 {
   margin-top: 0px;
-  margin-bottom:  7px;
+  margin-bottom:  40px;
   letter-spacing: 0.25px;
   color: #232d39;
   font-size: 19px;
@@ -702,6 +703,24 @@ features
   font-weight: 500;
 }
 
+#features .feature-item ul.social-icons li {
+  display: inline-block;
+  margin-right: 12px;
+}
+
+#features .feature-item ul.social-icons li:last-child {
+  margin-right: 0px;
+}
+
+#features .feature-item ul.social-icons li a {
+  color: blue;
+  transition: all .3s;
+}
+
+#features .feature-item ul.social-icons li a:hover {
+  color: #ed563b;
+}
+
 /*
 ---------------------------------------------
 subscribe
@@ -710,7 +729,8 @@ subscribe
 
 #call-to-action {
   padding: 120px 0px;
-  background-image: url(../images/cta-bg.jpg);
+  /* background-image: url(../images/programming.jpg); */
+  background-color: grey;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -840,7 +860,8 @@ schedule
 
 #schedule {
   padding: 0px 0px 140px 0px;
-  background-image: url(../images/schedule-bg.jpg);
+  /* background-image: url(../images/bubble-bg.jpg); */
+  background-color: grey;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
